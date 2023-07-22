@@ -1,0 +1,29 @@
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .socials-list i[class*="ti-"] {
+    color: #757575;
+}
+
+#footer .socials-list a {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .socials-list a:hover {
+    opacity: 0.7;
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #757575;
+}
+
+#footer .copyright a {
+    color: #757575;
+    text-decoration: underline;
+}

@@ -1,0 +1,163 @@
+/* PC */
+@media (min-width: 64em) {
+    #header .mobile-menu-btn {
+        display: none;
+    }
+
+    #header .search-btn {
+        display: block;
+    }
+}
+
+/* Moblie & Tablet */
+@media (max-width: 63.9375em) {
+    .btn {
+        padding: 16px;
+    }
+
+    #content .contact-form .form-control {
+        padding: 16px;
+    }
+
+    #footer .socials-list a {
+        line-height: 48px;
+        font-size: 32px;
+        padding: 0 8px;
+        display: inline-block;
+    }
+
+    #footer .copyright {
+        font-size: 24px;
+        padding: 12px 0;
+    }
+
+    #footer .copyright a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+
+@media(min-width: 46.1875em) {
+    #nav li:hover .subnav {
+        display: block;
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.1875em) and (max-width: 63.9375em) {
+    #header .mobile-menu-btn {
+        display: none;
+    }
+
+    #header .search-btn {
+        display: block;
+    }
+
+    .btn {
+        padding: 16px;
+    }
+
+    #nav .subnav a {
+        padding: 4px 12px;
+    }
+
+    #content .contact-info {
+        line-height: 2;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .btn {
+        width: 100%;
+
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav>li {
+        display: block;
+    }
+
+    #nav>li>a {
+        display: block;
+        padding: 1px 24px;
+    }
+
+    #nav>li>a::after {
+        content: "";
+        border-left: unset;
+        top: unset;
+        transform: unset;
+        width: calc(100% - 48px);
+        height: 97%;
+        border-top: 1px solid #fff;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    #nav>li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+        opacity: 0.8;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 4px 40px;
+    }
+
+    #nav .subnav.open {
+        display: block;
+    }
+
+    .row {
+        display: block;
+    }
+
+    #content .member-img {
+        margin-bottom: 16px;
+    }
+
+    #slider .text-conntent {
+        display: none;
+    }
+
+    #slider .linear {
+        display: none;
+    }
+
+    #content .place-item {
+        margin-bottom: 15px;
+    }
+
+    #content .contact-info {
+        margin-bottom: 32px;
+        line-height: 1.8;
+    }
+
+    #content .contact-form .form-control {
+        margin-bottom: 8px;
+    }
+
+}
