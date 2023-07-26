@@ -37,9 +37,18 @@
     }
 }
 
+/* PC && Tablet */
 @media(min-width: 46.1875em) {
     #nav li:hover .subnav {
         display: block;
+    }
+
+    .block {
+        display: block !important;
+    }
+
+    .none {
+        display: none !important;
     }
 }
 
@@ -139,7 +148,7 @@
         margin-bottom: 16px;
     }
 
-    #slider .text-conntent {
+    #slider .text-content {
         display: none;
     }
 

@@ -69,7 +69,7 @@
     margin: 8px 0 24px;
 }
 
-#buy-tickets {
+#modal__buy-tickets {
     font-size: 15px;
     width: 100%;
     background-color: #009688;
@@ -79,7 +79,7 @@
     padding: 16px;
 }
 
-#buy-tickets:hover {
+#modal__buy-tickets:hover {
     cursor: pointer;
     opacity: 0.8;
 }

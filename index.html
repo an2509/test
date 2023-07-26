@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/modal.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/toast.css">
     <link rel="stylesheet" href="./assets/icon/themify-icons/themify-icons.css">
 </head>
 
@@ -42,6 +43,8 @@
             </ul>
             <!-- End : Nav -->
 
+            <input id="" type="text" class="search-bar" required placeholder="Search">
+
             <!-- Search button -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
@@ -53,11 +56,19 @@
             </div>
         </div>
 
-        <div id="slider">
+        <div id="slider" class="chicago">
             <div class="linear"></div>
-            <div class="text-conntent">
+            <div id="chicago" class="text-content chicago">
+                <h2 class="text-heading">Chicago</h2>
+                <div class="text-description">Thank you, Chicago - A night we won't forget.</div>
+            </div>
+            <div id="la" class="text-content la ">
                 <h2 class="text-heading">Los Angeles</h2>
                 <div class="text-description">We had the best time playing at Venice Beach!</div>
+            </div>
+            <div id="ny" class="text-content ny ">
+                <h2 class="text-heading">New York</h2>
+                <div class="text-description">The atmosphere in New York is lorem ipsum.</div>
             </div>
         </div>
 
@@ -219,26 +230,28 @@
             </header>
 
             <!-- Body -->
-            <div class="modal-body">
-                <!-- Input Tickets -->
-                <label for="tickets-quantity" class="modal-label">
-                    <i class="ti-shopping-cart"></i>
-                    Tickets, $15 per person
-                </label>
-                <input id="tickets-quantity" type="text" class="modal-input" placeholder="How many?">
+            <form action="">
+                <div class="modal-body">
+                    <!-- Input Tickets -->
+                    <label for="tickets-quantity" class="modal-label">
+                        <i class="ti-shopping-cart"></i>
+                        Tickets, $15 per person
+                    </label>
+                    <input id="tickets-quantity" type="text" class="modal-input" required placeholder="How many?">
 
-                <!-- Input Email -->
-                <label for="tickets-email" class="modal-label">
-                    <i class="ti-user"></i>
-                    Send To
-                </label>
-                <input id="tickets-email" type="email" class="modal-input" placeholder="Enter email">
+                    <!-- Input Email -->
+                    <label for="tickets-email" class="modal-label">
+                        <i class="ti-user"></i>
+                        Send To
+                    </label>
+                    <input id="tickets-email" type="email" class="modal-input" required placeholder="Enter email">
 
-                <!-- Button Pay -->
-                <button id="buy-tickets">
-                    Pay <i class="ti-check"></i>
-                </button>
-            </div>
+                    <!-- Button Pay -->
+                    <button id="modal__buy-tickets" class="js-modal__buy-tickets">
+                        Pay <i class="ti-check"></i>
+                    </button>
+                </div>
+            </form>
 
             <!-- Footer -->
             <footer class="modal-footer">
@@ -247,8 +260,14 @@
         </div>
     </div>
 
-    <script src="menu.js"></script>
-    <script src="modal.js"></script>
+    <div id="toast">
+    </div>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/search.js"></script>
 </body>
 
 </html>

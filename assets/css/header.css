@@ -22,6 +22,7 @@
     z-index: 1;
     height: var(--height);
     background-color: #000;
+    display: flex;
 }
 
 /* Begin : Nav */
@@ -127,6 +128,18 @@
     line-height: 46px;
 }
 
-#content {}
+#header .search-bar {
+    display: none;
+    background-color: #fff;
+    border: none;
+    margin: auto;
+    width: 500px;
+    height: calc(var(--height) - 20px);
+    border-radius: 20px;
+    padding: 0 8px;
+    outline: none;
+}
 
-#footer {}
+#header .search-bar.open {
+    display: inline-block;
+}
